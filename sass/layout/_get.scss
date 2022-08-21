@@ -1,5 +1,5 @@
 .get {
-    padding: 80px 0 148px;
+    padding: 80px 0 148px 0;
 }
 
 .get__container {}
@@ -11,28 +11,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .list-get {}
 
 .list-get__item {
+    padding: 50px 0;
     background-color: var(--white-color);
-    padding: 50px 40px;
-}
-
-.list-get__link {
-    display: block;
-    & >*:not(:last-child){
-        margin-bottom: 15px;
-    }
+    flex-basis: calc((100% - 30px) / 3);
+    
 }
 .list-get__item:focus,
 .list-get__item:hover{
     transform: scaleX(1.15) scaleY(1.25);
     background-color: var(--primary-text-color);
 }
+.list-get__link {
+    display: block;
+    & >*:not(:last-child){
+        margin-bottom: 15px;
+    }
+}
+
 .list-get__icon {
+    width: 100%;
     fill: var(--secondary-accent-color);
 
     .list-get__item:focus & {
@@ -85,10 +88,12 @@
     .list-get__item:focus & {
             color: var(--white-color);
             border: 1px solid var(--white-color);
+            cursor: pointer;
         }
     
         .list-get__item:hover & {
             color: var(--white-color);
             border: 1px solid var(--white-color);
+            cursor: pointer;
         }
 }
