@@ -1,0 +1,94 @@
+.get {
+    padding: 80px 0 148px;
+}
+
+.get__container {}
+
+.get__header {
+    margin-bottom: 110px;
+}
+.get__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.list-get {}
+
+.list-get__item {
+    background-color: var(--white-color);
+    padding: 50px 40px;
+}
+
+.list-get__link {
+    display: block;
+    & >*:not(:last-child){
+        margin-bottom: 15px;
+    }
+}
+.list-get__item:focus,
+.list-get__item:hover{
+    transform: scaleX(1.15) scaleY(1.25);
+    background-color: var(--primary-text-color);
+}
+.list-get__icon {
+    fill: var(--secondary-accent-color);
+
+    .list-get__item:focus & {
+            fill: var(--white-color);
+        }
+    
+        .list-get__item:hover & {
+            fill: var(--white-color);
+        }
+}
+
+.list-get__email {
+    @include font($fw: 600, $lh: 24px);
+    text-align: center;
+   
+    .list-get__item:focus &{
+        color: var(--white-color);
+    }
+    .list-get__item:hover &{
+        color: var(--white-color);
+    }
+}
+
+.list-get__title {
+    @include font($fs: 16px, $lh: 24px, $ls: 0.1px);
+    text-align: center;
+
+    .list-get__item:focus & {
+            color: var(--white-color);
+        }
+    
+        .list-get__item:hover & {
+            color: var(--white-color);
+        }
+}
+
+.list-get__btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    @include font($fw: 600, $lh: 24px);
+    color: var(--primary-accent-color);
+    background-color: transparent;
+    border: 1px solid #FF7B47;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    .list-get__item:focus & {
+            color: var(--white-color);
+            border: 1px solid var(--white-color);
+        }
+    
+        .list-get__item:hover & {
+            color: var(--white-color);
+            border: 1px solid var(--white-color);
+        }
+}

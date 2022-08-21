@@ -1,0 +1,27 @@
+.clients {}
+
+.clients__container {}
+
+.clients__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.clients__item {}
+
+.clients__link {
+    display: block;
+    
+}
+
+.clients__icon {
+    fill: var(--secondary-text-color);
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--primary-accent-color);
+    }
+    
+}
