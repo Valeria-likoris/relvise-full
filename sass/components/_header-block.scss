@@ -1,0 +1,19 @@
+.header-block {
+    
+    &>*:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+.header-block__title {
+    text-align: center;
+    @include font($fs: 40px, $lh: 57px);
+}
+
+.header-block__subtitle {
+    width: 511px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @include font($fw: 500, $lh: 20px);
+    color: var(--secondary-text-color);
+}

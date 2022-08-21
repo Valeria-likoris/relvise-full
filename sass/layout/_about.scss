@@ -1,0 +1,85 @@
+.about {
+    padding-top: 100px;
+    padding-bottom: 136px;
+    background-color: var(--white-color);
+}
+
+.about__container {}
+
+.about__header {
+    padding-bottom: 100px;
+}
+
+.about__box{
+    display: flex;
+}
+
+.about__video {
+    flex: 0 0 57%;
+    position: relative;
+    padding-bottom: 42.25%;
+}
+
+.about__video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.about__wrapper {
+    padding-left: 120px;
+    flex: 1 1 auto;
+    & >*:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+
+.about__desc {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    & >*:not(:last-child) {
+            margin-bottom: 10px;
+        }
+}
+
+.desc-about {}
+
+.desc-about__title {
+    @include font($fs: 40px, $lh: 57px);
+}
+
+.desc-about__text {
+    @include font($fw: 500, $lh: 20px);
+    color: var(--secondary-text-color);
+}
+
+.about__list {
+   & >*:not(:last-child) {
+            margin-bottom: 30px;
+        }
+}
+
+.list-about {}
+
+.list-about__item {
+    & > *:not(:last-child){
+        margin-bottom: 5px;
+    }
+}
+
+.list-about__title {
+    @include font($fs: 16px, $lh: 24px, $ls: 0.1px);
+}
+.list-about__title::before{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    content: '';
+    background-image: url(../../images/about/icon1.svg);
+}
+.list-about__text {
+    @include font($fw: 600, $lh: 24px);
+    color:var(--secondary-text-color);
+}
