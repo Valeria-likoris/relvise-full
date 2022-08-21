@@ -64,21 +64,21 @@
 .list-about {}
 
 .list-about__item {
-    & > *:not(:last-child){
-        margin-bottom: 5px;
-    }
+    display: flex;
+    align-items: flex-start;
 }
-
+.list-about__icon-wrapper{
+    margin-right: 20px;
+}
+.list-about__desc{
+    &>*:not(:last-child) {
+            margin-bottom: 5px;
+        }
+}
 .list-about__title {
     @include font($fs: 16px, $lh: 24px, $ls: 0.1px);
 }
-.list-about__title::before{
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    content: '';
-    background-image: url(../../images/about/icon1.svg);
-}
+
 .list-about__text {
     @include font($fw: 600, $lh: 24px);
     color:var(--secondary-text-color);

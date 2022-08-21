@@ -8,8 +8,6 @@
     margin-bottom: 50px;
 }
 
-<<<<<<< HEAD
-=======
 .header-block {
     & >*:not(:last-child){
         margin-bottom: 10px;
@@ -26,8 +24,6 @@
     @include font($fw: 500, $lh: 20px);
     color: var(--secondary-text-color);
 }
->>>>>>> 80bad6dbefb94d78a39a41e4784789965803f0fa
-
 .advantages__list {
     display: flex;
     flex-wrap: wrap;
